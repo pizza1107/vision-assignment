@@ -1,0 +1,6 @@
+target
+.DS_Store
+*.mcap
+.env
+.env.*
+!.env.example

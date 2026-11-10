@@ -1,0 +1,15 @@
+# Extracted from infantry/configs/infantry_2.yaml in the supplied recording collection.
+# The recording's startup log selects this configuration. See ../README.md for provenance.
+image_width: 1440
+image_height: 1080
+camera_matrix:
+  - [1796.537224030978, 0.0, 668.29702818918167]
+  - [0.0, 1795.7258744712844, 566.84403674348516]
+  - [0.0, 0.0, 1.0]
+# OpenCV order: k1, k2, p1, p2, k3.
+distort_coeffs:
+  - -0.07835511696185557
+  - 0.13828205875029992
+  - -0.00038637043013410734
+  - -0.00076247786447771946
+  - 0.0
