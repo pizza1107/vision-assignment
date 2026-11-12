@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD816166-0D76-30D5-995C-0B5B6BEB5F0B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>detection</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">detection.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">detection.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">detection.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">detection.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/68827/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Users\68827\vcpkg\vcpkg.exe z-applocal --target-binary=C:/Users/68827/Robomaster/vision-assignment/detection/build/Debug/detection.exe --installed-bin-dir=C:/Users/68827/vcpkg/installed/x64-windows/debug/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -E copy_if_different C:\Users\68827/RoboMaster/onnxruntime-win-x64-1.31.1/lib/onnxruntime.dll C:/Users/68827/Robomaster/vision-assignment/detection/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_highgui4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_ml4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_objdetect4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_photo4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_stitching4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_video4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_videoio4d.lib;C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\lib\onnxruntime.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecs4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_calib3d4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_dnn4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_features2d4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_flann4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_imgproc4d.lib;C:\Users\68827\vcpkg\installed\x64-windows\debug\lib\opencv_core4d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/68827/Robomaster/vision-assignment/detection/build/Debug/detection.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/68827/Robomaster/vision-assignment/detection/build/Debug/detection.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/68827/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Users\68827\vcpkg\vcpkg.exe z-applocal --target-binary=C:/Users/68827/Robomaster/vision-assignment/detection/build/Release/detection.exe --installed-bin-dir=C:/Users/68827/vcpkg/installed/x64-windows/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -E copy_if_different C:\Users\68827/RoboMaster/onnxruntime-win-x64-1.31.1/lib/onnxruntime.dll C:/Users/68827/Robomaster/vision-assignment/detection/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\lib\onnxruntime.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/68827/Robomaster/vision-assignment/detection/build/Release/detection.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/68827/Robomaster/vision-assignment/detection/build/Release/detection.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/68827/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Users\68827\vcpkg\vcpkg.exe z-applocal --target-binary=C:/Users/68827/Robomaster/vision-assignment/detection/build/MinSizeRel/detection.exe --installed-bin-dir=C:/Users/68827/vcpkg/installed/x64-windows/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -E copy_if_different C:\Users\68827/RoboMaster/onnxruntime-win-x64-1.31.1/lib/onnxruntime.dll C:/Users/68827/Robomaster/vision-assignment/detection/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\lib\onnxruntime.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/68827/Robomaster/vision-assignment/detection/build/MinSizeRel/detection.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/68827/Robomaster/vision-assignment/detection/build/MinSizeRel/detection.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/68827/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\include;C:\Users\68827\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Users\68827\vcpkg\vcpkg.exe z-applocal --target-binary=C:/Users/68827/Robomaster/vision-assignment/detection/build/RelWithDebInfo/detection.exe --installed-bin-dir=C:/Users/68827/vcpkg/installed/x64-windows/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -E copy_if_different C:\Users\68827/RoboMaster/onnxruntime-win-x64-1.31.1/lib/onnxruntime.dll C:/Users/68827/Robomaster/vision-assignment/detection/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\68827\RoboMaster\onnxruntime-win-x64-1.31.1\lib\onnxruntime.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\68827\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/68827/Robomaster/vision-assignment/detection/build/RelWithDebInfo/detection.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/68827/Robomaster/vision-assignment/detection/build/RelWithDebInfo/detection.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\68827\Robomaster\vision-assignment\detection\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/68827/Robomaster/vision-assignment/detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -SC:/Users/68827/Robomaster/vision-assignment/detection -BC:/Users/68827/Robomaster/vision-assignment/detection/build --check-stamp-file C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindTIFF.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\68827\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/68827/Robomaster/vision-assignment/detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -SC:/Users/68827/Robomaster/vision-assignment/detection -BC:/Users/68827/Robomaster/vision-assignment/detection/build --check-stamp-file C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindTIFF.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\68827\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/68827/Robomaster/vision-assignment/detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -SC:/Users/68827/Robomaster/vision-assignment/detection -BC:/Users/68827/Robomaster/vision-assignment/detection/build --check-stamp-file C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindTIFF.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\68827\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/68827/Robomaster/vision-assignment/detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -SC:/Users/68827/Robomaster/vision-assignment/detection -BC:/Users/68827/Robomaster/vision-assignment/detection/build --check-stamp-file C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindTIFF.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Users\68827\.pixi\envs\cmake\Library\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\FindFFMPEG.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\ffmpeg\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\68827\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\68827\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\68827\Robomaster\vision-assignment\detection\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\68827\Robomaster\vision-assignment\detection\main.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\68827\Robomaster\vision-assignment\detection\build\ZERO_CHECK.vcxproj">
+      <Project>{23D30B1A-55A5-378F-9F2B-28E2DF4C9A6C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

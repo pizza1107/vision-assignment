@@ -1,0 +1,3 @@
+C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/detection.dir
+C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/ZERO_CHECK.dir

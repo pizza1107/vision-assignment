@@ -1,0 +1,10 @@
+^C:\USERS\68827\ROBOMASTER\VISION-ASSIGNMENT\DETECTION\CMAKELISTS.TXT
+setlocal
+C:\Users\68827\.pixi\envs\cmake\Library\bin\cmake.exe -SC:/Users/68827/Robomaster/vision-assignment/detection -BC:/Users/68827/Robomaster/vision-assignment/detection/build --check-stamp-file C:/Users/68827/Robomaster/vision-assignment/detection/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
