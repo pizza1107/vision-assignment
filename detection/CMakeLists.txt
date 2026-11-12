@@ -12,6 +12,7 @@ set(ONNXRUNTIME_ROOT
     "$ENV{USERPROFILE}/RoboMaster/onnxruntime-win-x64-1.31.1"
 )
 
+# Main detection executable
 add_executable(detection main.cpp)
 
 target_include_directories(detection PRIVATE
@@ -27,4 +28,11 @@ add_custom_command(TARGET detection POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
     "${ONNXRUNTIME_ROOT}/lib/onnxruntime.dll"
     "$<TARGET_FILE_DIR:detection>"
+)
+
+# Visualization executable
+add_executable(visualize visualize.cpp)
+
+target_link_libraries(visualize PRIVATE
+    ${OpenCV_LIBS}
 )
